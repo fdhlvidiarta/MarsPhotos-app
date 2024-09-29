@@ -46,4 +46,4 @@ Use the Coil library to load and display photos from the internet in your Androi
 Hasil Codelab Mars Photos
 -------------------------
 
-![HasilMarsphoto.png](..%2F..%2FHasilMarsphoto.png)
+![HasilMarsphoto](https://github.com/user-attachments/assets/8a200adc-5dc6-46b2-973d-104bb3a3f2e5)
