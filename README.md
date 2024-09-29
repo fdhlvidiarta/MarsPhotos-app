@@ -26,13 +26,24 @@ Getting Started
 3. Import the sample into Android Studio.
 4. Build and run the sample.
 
+Warning
+-------
+
+Jika pada percobaan codelab pertama emulator/device ketika di run otomatis close app,
+pastikan update plugins _**id("org.jetbrains.kotlin.plugin.serialization") version "1.9.10"**_
+
 ## [Build this app through hands-on codelabs in the Android Basics with Compose Course](https://developer.android.com/courses/android-basics-compose/course)
 
 ### [Get data from the internet](https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet)
-Learn how to use community-developed libraries to connect to a web service to retrieve and display data in your Android Kotlin compose app. 
+Learn how to use community-developed libraries to connect to a web service to retrieve and display data in your Android Kotlin compose app.
 
 ### [Add repository and Manual DI](https://developer.android.com/codelabs/basic-android-kotlin-compose-add-repository)
 Learn how to improve the architecture of the app by separating the network calls into a repository.
 
 ### [Load and display images from the internet](https://developer.android.com/codelabs/basic-android-kotlin-compose-load-images)
-Use the Coil library to load and display photos from the internet in your Android Compose app. 
+Use the Coil library to load and display photos from the internet in your Android Compose app.
+
+Hasil Codelab Mars Photos
+-------------------------
+
+![HasilMarsphoto.png](..%2F..%2FHasilMarsphoto.png)

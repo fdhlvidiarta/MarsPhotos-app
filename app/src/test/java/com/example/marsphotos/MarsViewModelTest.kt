@@ -1,9 +1,9 @@
 package com.example.marsphotos
 
-import com.example.marsphotos.data.NetworkMarsPhotosRepository
 import com.example.marsphotos.fake.FakeDataSource
-import com.example.marsphotos.fake.FakeMarsApiService
+import com.example.marsphotos.fake.FakeNetworkMarsPhotosRepository
 import com.example.marsphotos.rules.TestDispatcherRule
+import com.example.marsphotos.ui.screens.MarsViewModel
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Rule
@@ -14,11 +14,14 @@ class MarsViewModelTest {
     val testDispatcher = TestDispatcherRule()
 
     @Test
-    fun networkMarsPhotosRepository_getMarsPhotos_verifyPhotoList() =
+    fun marsViewModel_getMarsPhotos_verifyMarsUiStateSuccess() =
         runTest {
-            val repository = NetworkMarsPhotosRepository(
-                marsApiService = FakeMarsApiService()
+            val marsViewModel = MarsViewModel(
+                marsPhotosRepository = FakeNetworkMarsPhotosRepository()
             )
-            assertEquals(FakeDataSource.photosList, repository.getMarsPhotos())
+            assertEquals(
+                MarsViewModel.MarsUiState.Success(FakeDataSource.photosList),
+                marsViewModel.marsUiState
+            )
         }
 }
